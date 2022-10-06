@@ -1,0 +1,78 @@
+:root{
+    --con-clr: #DEE5D6;
+    --bg-clr: #5EC28D;
+    --grn-clr: #0faa0c;
+    --lit-grn: #3db13b;
+    --red-clr: #F22626;
+    --lit-red: #f54444;
+    --sub-clr: #4753f1;
+    --lit-sub: #545eeb;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-clr);
+    font-family: 'Cairo', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .btn-con{
+    background-color: var(--con-clr);
+    width: 25%;
+    height: 40%;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+
+.container .btn-con .btn{
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .btn-con .btn1{
+    background-color: var(--grn-clr);
+    padding: 0.35em 0.75em;
+    border-radius: 0.4em;
+}
+
+.container .btn-con .btn1:hover{
+    background-color: var(--lit-grn);
+}
+
+.container .btn-con .btn2{
+    background-color: var(--red-clr);
+    padding: 0.35em 0.75em;
+    border-radius: 0.4em;
+}
+
+.container .btn-con .btn2:hover{
+    background-color: var(--lit-red);
+}
+
+.container .btn-con .btn3{
+    background-color: var(--sub-clr);
+    padding: 0.35em 0.75em;
+    border-radius: 0.4em;
+}
+
+.container .btn-con .btn3:hover{
+    background-color: var(--lit-sub);
+}
